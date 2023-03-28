@@ -1,8 +1,6 @@
-#!/Users/danylo/projects/python/chat-gpt-test/venv/bin/python
-import os
 import click
 
-from core import Core
+from terminal_gpt.core import Core
 
 
 @click.command()
