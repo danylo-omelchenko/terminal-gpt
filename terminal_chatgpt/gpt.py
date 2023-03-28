@@ -1,6 +1,6 @@
 import click
 
-from terminal_gpt.core import Core
+from terminal_chatgpt.core import Core
 
 
 @click.command()

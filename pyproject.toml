@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "terminal-gpt"
-version = "0.0.0"
+name = "terminal-chatgpt"
+version = "0.0.1"
 description = ""
 authors = ["Danylo Omelchenko <dpixelstudio@gmail.com>"]
 
 [tool.poetry.scripts]
-gpt = "terminal_gpt.gpt:gpt_entry_point"
+gpt = "terminal_chatgpt.gpt:gpt_entry_point"
 
 [tool.poetry.dependencies]
 python = "^3.9"

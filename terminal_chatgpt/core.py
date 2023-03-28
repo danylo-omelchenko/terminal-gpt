@@ -5,7 +5,7 @@ from rich.traceback import Traceback
 from rich.markdown import Markdown
 from rich.console import Console
 
-from terminal_gpt.spinner import Spinner
+from terminal_chatgpt.spinner import Spinner
 
 console = Console(color_system="256")
 
