@@ -98,8 +98,7 @@ class Core:
         console.print(Traceback())
         exit(exit_code)
 
-    def _ask_for_input(self, first_prompt):
-        self.first_prompt = first_prompt
+    def _ask_for_input(self):
         if self.first_prompt:
             users_prompt = self.first_prompt
             self.first_prompt = None
@@ -112,8 +111,9 @@ class Core:
         os.system('osascript -e "say \\"{}\\" "'.format(text))
 
     def run(self, first_prompt=None):
+        self.first_prompt = first_prompt
         while True:
-            prompt = self._ask_for_input(first_prompt)
+            prompt = self._ask_for_input()
 
             if self._is_quit_prompt(prompt):
                 exit(0)
